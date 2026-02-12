@@ -1,0 +1,17 @@
+[
+  {
+    "email": "yabajidileep@gmail.com",
+    "password": "1234dileeA@",
+    "expected": "success"
+  },
+  {
+    "email": "dileep@gmail.com",
+    "password": "1234dileeA@",
+    "expected": "invalid email"
+  },
+  {
+    "email": "yabajidileep@gmail.com",
+    "password": "12345678",
+    "expected": "invalid password"
+  }
+]

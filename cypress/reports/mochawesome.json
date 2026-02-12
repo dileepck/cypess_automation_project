@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-02-11T06:15:56.111Z",
+    "end": "2026-02-11T06:16:09.185Z",
+    "duration": 13074,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a9d1211a-d230-494b-b2cb-660fd3128d74",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Login2.cy.js",
+      "file": "cypress\\e2e\\Login2.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "297a48b1-ba00-4e85-bad3-4cde4e829088",
+          "title": "Login – Negative Test Cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with invalid email",
+              "fullTitle": "Login – Negative Test Cases Login with invalid email",
+              "timedOut": null,
+              "duration": 5251,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n    \"value\": \"cypress\\\\e2e\\\\Login2.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Login2.cy.js\\\\PASSED_Login_with_invalid_email.png\"\n      ]\n    ]\n  }\n]",
+              "code": "// Enter email from test data\n_LoginPage.default.enterEmail(data.email);\n// Enter password from test data\n_LoginPage.default.enterPassword(data.password);\n// Click login button\n_LoginPage.default.clickLogin();\n// Verify error message is shown\ncy.contains(/invalid/i).should('be.visible');",
+              "err": {},
+              "uuid": "b6e852c4-e4be-44bb-a9ed-2d7dd8dba99d",
+              "parentUUID": "297a48b1-ba00-4e85-bad3-4cde4e829088",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with invalid password",
+              "fullTitle": "Login – Negative Test Cases Login with invalid password",
+              "timedOut": null,
+              "duration": 2716,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n    \"value\": \"cypress\\\\e2e\\\\Login2.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\Login2.cy.js\\\\PASSED_Login_with_invalid_password.png\"\n      ]\n    ]\n  }\n]",
+              "code": "// Enter email from test data\n_LoginPage.default.enterEmail(data.email);\n// Enter password from test data\n_LoginPage.default.enterPassword(data.password);\n// Click login button\n_LoginPage.default.clickLogin();\n// Verify error message is shown\ncy.contains(/invalid/i).should('be.visible');",
+              "err": {},
+              "uuid": "be2bd995-6296-4fb5-8622-8052aa1d0416",
+              "parentUUID": "297a48b1-ba00-4e85-bad3-4cde4e829088",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b6e852c4-e4be-44bb-a9ed-2d7dd8dba99d",
+            "be2bd995-6296-4fb5-8622-8052aa1d0416"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7967,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": true,
+        "html": false,
+        "json": true,
+        "code": true
+      },
+      "version": "6.3.2"
+    }
+  }
+}

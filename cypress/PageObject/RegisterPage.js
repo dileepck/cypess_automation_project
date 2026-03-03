@@ -1,4 +1,3 @@
-// This class contains all actions related to the Register (Sign Up) page
 class RegisterPage {
 
   // This method checks whether the Register page is opened
